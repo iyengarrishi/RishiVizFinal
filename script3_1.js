@@ -24,7 +24,7 @@ function loadData4(){
 	var myChart = new google.visualization.ColumnChart(document.getElementById("recoveryDiv"));
 	// 6. In the chart options, I set width, height and color. I also adjusted the scale on the vertical axis to 0 
 	var options = {
-          title: "Farebox Recovery Ratio", width: 900, height: 500, colors:['#636363','#2ca25f','#3182bd','#e34a33'], vAxis:{baseline:0}
+          title: "Farebox Recovery Ratio", width: 900, height: 500, colors:['#0cc0c9', '#00DE7C', '#399499', '#FF405B'], vAxis:{baseline:0}
    		};
 	// 7. Render the chart
 	myChart.draw(myDataTable, options);
