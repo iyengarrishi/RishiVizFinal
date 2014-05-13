@@ -24,8 +24,8 @@ function loadData(){
 	// 6. These are my chart options, where I give my chart a title, a width within my container div and make a stacked chart
 	//	I also customized the colors of the bars, displayed every 3 years on the X-axis, and removed the default legend that Google Viz provides
 	var options = {
-          title: "% Share of Operating Expenses", width: 300, height: 500, isStacked:true, hAxis:{showTextEvery:3},
-          colors:['#e34a33', '#636363', '#2ca25f','#3182bd'], legend:{position: 'none'}
+          title: "Share of Operating Expenses", width: 300, height: 400, isStacked:true, hAxis:{showTextEvery:3},
+          colors:['#FF405B', '#0cc0c9', '#00DE7C', '#399499'], bar:{groupWidth:'90%'}, legend:{position: 'none'}
        	}
 	// 7. And finally, I render the chart on the page
 	myChart.draw(myDataTable, options);
@@ -48,8 +48,7 @@ function loadData2(){
 		  ['2009',23.14594932,52.98314451,11.79045229,12.08045388],
 		  ['2010',22.76286923,53.71926944,11.79943626,11.71842506],
 		  ['2011',21.43681495,55.243078,11.61734308,11.70276397],
-		  ['2012',21.20332513,55.24652262,11.83674884,11.71340341],
-		  ['2013',20.98929789,55.85186891,11.48509661,11.67373658]
+		  ['2012',21.20332513,55.24652262,11.83674884,11.71340341]
 		  
         ]);
 
@@ -57,8 +56,8 @@ function loadData2(){
 	var myChart = new google.visualization.ColumnChart(document.getElementById("revenueDiv"));
 
 	var options = {
-          title: "% Share of Fare Revenues", width: 300, height: 500, isStacked:true, hAxis:{showTextEvery:3},
-          colors:['#e34a33', '#636363', '#2ca25f','#3182bd'], legend:{position:'none'}
+          title: "Share of Fare Revenues", width: 300, height: 400, isStacked:true, hAxis:{showTextEvery:3},
+          colors:['#FF405B', '#0cc0c9', '#00DE7C', '#399499'], bar:{groupWidth:'90%'}, legend:{position:'none'}
         };
 
 	myChart.draw(myDataTable, options);
@@ -80,8 +79,7 @@ function loadData3(){
 		  ['2009',32.68317354,61.07331272,3.018711363,3.224802377],
 		  ['2010',31.53692352,62.16038811,3.142509513,3.160178863],
 		  ['2011',30.3409324,63.36057244,3.168888012,3.129607149],
-		  ['2012',30.22665639,63.45650329,3.181450526,3.135389792],
-		  ['2013',29.96603723,63.78544794,3.139146485,3.109368345]
+		  ['2012',30.22665639,63.45650329,3.181450526,3.135389792]
 
 		  	
         ]);
@@ -91,8 +89,8 @@ function loadData3(){
 	// 11. One exception on the options for this chart: I want a common legend for all three charts here
 	//	So I use the Google Viz documentation to position it on the right of the left-most chart.
 	var options = {
-          title: "% Share of Ridership", width: 300, height: 500, isStacked:true, hAxis:{showTextEvery:3},
-          colors:['#e34a33', '#636363', '#2ca25f','#3182bd'], legend:{position: 'right', textStyle: {color: 'black', fontSize: 8}}
+          title: "Share of Ridership", width: 300, height: 400, isStacked:true, hAxis:{showTextEvery:3},
+          colors:['#FF405B', '#0cc0c9', '#00DE7C', '#399499'], bar:{groupWidth:'90%'}, legend:{position: 'none'}
         };
 
 	myChart.draw(myDataTable, options);
